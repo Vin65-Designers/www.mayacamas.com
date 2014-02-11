@@ -742,9 +742,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #474037;
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-weight: normal;
+  font-family: "proxima-nova-n7","proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 700;
   margin: 0;
 }
 

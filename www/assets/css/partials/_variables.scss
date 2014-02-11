@@ -13,6 +13,55 @@ $blue-dark: #2e5b87;
 $offBlack: #111;
 $flatgrey: #999999;
 
+// Fonts
+@mixin garamond-regular{
+	font:{
+		family: "adobe-garamond-pro-n4","adobe-garamond-pro",sans-serif;
+		style: normal;
+		weight: 400;
+	}
+}
+
+@mixin garamond-italic{
+	font:{
+		family: "adobe-garamond-pro-i4","adobe-garamond-pro",sans-serif;
+		style: italic;
+		weight: 400;
+	}
+}
+
+@mixin garamond-bold{
+	font:{
+		family: "adobe-garamond-pro-n7","adobe-garamond-pro",sans-serif;
+		style: normal;
+		weight: 700;
+	}
+}
+
+@mixin garamond-bold-italic{
+	font:{
+		family: "adobe-garamond-pro-i7","adobe-garamond-pro",sans-serif;
+		style: italic;
+		weight: 700;
+	}
+}
+
+@mixin proxima-nova-bold{
+	font:{
+		family: "proxima-nova-n7","proxima-nova",sans-serif;
+		style: normal;
+		weight: 700;
+	}
+}
+
+@mixin proxima-nova-black{
+	font:{
+		family: "proxima-nova-n9","proxima-nova",sans-serif;
+		style: normal;
+		weight: 900;
+	}
+}
+
 // Font Colors
 $fontColor: $offBlack; // Main Body Content font color
 $linkColor: $blue; // Main Body content link color
