@@ -1,0 +1,74 @@
+.backToTop{
+	background: $backToTop;
+	bottom: 1em;
+	color: $backToTopFont;
+	border: 1px solid $borderColor;
+	border-radius: 50%;
+	display: none;
+	height: 5em;
+	line-height: 5em;
+	opacity: 0.6;
+	position: fixed;
+	right: 1em;
+	text:{
+		align: center;
+		decoration: none;
+	}
+	width: 5em;
+	z-index: 1000;
+}
+
+.page{
+	// @media screen and (min-width: 768px){
+	// 	float: right;
+	// 	width: 75%;
+	// }
+
+	border: 1px solid #dedede;
+	box-sizing: border-box;
+	// float: left;
+	// margin: 0.6%;
+	margin: 0.6% auto;
+	padding: 30px;
+	width: 40.8%;
+}
+
+.col2{
+	@media screen and (min-width: 581px){
+		float: left;
+		margin-right: 4%;
+		width: 48%;
+	}
+
+	& + .col2{
+		margin-right: 0;
+	}
+}
+
+.v65-featureRight, .v65-right, 
+.v65-featureLeft, .v65-left, 
+.v65-border{
+	@include boxSizing;
+}
+
+.featureImage{
+	display: none;
+	background: {
+		repeat: no-repeat;
+		size: contain;
+	}
+	// height: 570px;
+	// width: 400px;
+	padding-top: 41.5%;
+	width: 29%;
+
+	&.leftFeatureImage{
+		background-image: image-url('backgrounds/history-left.jpg');
+		float: left;
+	}
+
+	&.rightFeatureImage{
+		background-image: image-url('backgrounds/history-right.jpg');
+		float: right;
+	}
+}
