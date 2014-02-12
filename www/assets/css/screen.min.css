@@ -734,11 +734,6 @@ body {
   color: #111111;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
-@media screen and (min-width: 581px) and (max-width: 1030px) {
-  body {
-    padding: 0 10px;
-  }
-}
 
 h1, h2, h3, h4, h5, h6 {
   color: #474037;
@@ -1015,7 +1010,7 @@ header.primary {
   }
 }
 .mainMenu a:hover {
-  color: #f1f1f1;
+  color: whitesmoke;
   text-decoration: none;
 }
 .mainMenu .v65-pageAParent {
@@ -1106,8 +1101,7 @@ header.primary {
 }
 
 .content {
-  background: white;
-  box-shadow: 0 0 20px #999999;
+  position: relative;
 }
 
 /* ----- a. Homepage Styles ----- */
@@ -1201,12 +1195,27 @@ header.primary {
   z-index: 1000;
 }
 
+.pageWrapper {
+  background: whitesmoke;
+  border: 8px solid whitesmoke;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+@media screen and (max-width: 1290px) {
+  .pageWrapper {
+    max-width: 465px;
+  }
+}
+@media screen and (min-width: 1291px) {
+  .pageWrapper {
+    width: 41%;
+  }
+}
+
 .page {
   border: 1px solid #dedede;
-  box-sizing: border-box;
-  margin: 0.6% auto;
-  padding: 30px;
-  width: 40.8%;
+  padding: 6.5%;
 }
 
 @media screen and (min-width: 581px) {
@@ -1228,20 +1237,29 @@ header.primary {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 480px) {
+  .featureImages {
+    display: none;
+  }
+}
+
 .featureImage {
-  display: none;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 570px;
+  min-width: 400px;
   padding-top: 41.5%;
+  position: absolute;
+  top: 0;
   width: 29%;
 }
 .featureImage.leftFeatureImage {
   background-image: url('../images/backgrounds/history-left.jpg?1392056473');
-  float: left;
+  left: 0;
 }
 .featureImage.rightFeatureImage {
   background-image: url('../images/backgrounds/history-right.jpg?1392056467');
-  float: right;
+  right: 0;
 }
 
 /* ----- c. Store Styles ----- */
@@ -1514,7 +1532,7 @@ footer li a {
   }
 }
 footer li a:hover {
-  color: #f1f1f1;
+  color: whitesmoke;
 }
 footer .phone a:hover, footer .email a:hover, footer .map a:hover {
   text-decoration: none;
